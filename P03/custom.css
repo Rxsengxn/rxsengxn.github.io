@@ -1,8 +1,16 @@
-
 footer {
     margin-top: 3rem;
-    padding: 3rem;
+    padding: 2rem;
 }
+
+.footer-sm img {
+    width: 10%;
+    height: auto;
+    max-height: 10%;
+    margin-right: 1rem;
+}
+
+
 
 .bi {
     display: inline-block;
@@ -15,12 +23,12 @@ footer {
     display: inline-block;
     fill: currentColor;
     font-size: 1.5rem;
-   
+
 }
 
 .bi-cart3 {
     display: inline-block;
     fill: currentColor;
     font-size: 1.25rem;
-    
+
 }

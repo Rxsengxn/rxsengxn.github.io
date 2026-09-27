@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="et">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tutvu meie jalatsipoe väärtuste ja meeskonnaga.">
+        <title>Meist | Bootstrap 5</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="custom.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Ava navigatsioon">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand me-5" href="index.html">
+                    <img src="img/adidas-logo.png" alt="Logo" width="50" height="50"> Bootstrap 5
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Naised</a>
+                            <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+                                <li><a class="dropdown-item" href="#">Kingad</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Saapad</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Mehed</a>
+                            <ul class="dropdown-menu" aria-labelledby="menDropdown">
+                                <li><a class="dropdown-item" href="#">Kingad</a></li>
+                                <li><a class="dropdown-item" href="#">Saapad</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="meist.html">Meist</a></li>
+                    </ul>
+                    <form class="d-flex me-1">
+                        <div class="input-group">
+                            <div class="input-group-text"><span class="bi bi-search" aria-hidden="true"></span></div>
+                            <input class="form-control" type="search" placeholder="Otsi" aria-label="Otsi">
+                        </div>
+                    </form>
+                </div>
+                <div class="float-end">
+                    <button class="btn btn-link text-light" type="button" aria-label="Logi sisse"><span
+                            class="bi bi-person"></span></button>
+                    <a class="btn btn-primary" href="ostukorv.html" aria-label="Ava ostukorv"><span class="bi bi-cart3"></span></a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container py-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Meist</li>
+                    </ol>
+                </nav>
+
+                <div class="row align-items-center g-5 mb-5">
+                    <div class="col-lg-6">
+                        <p class="text-primary fw-semibold mb-2">Meie lugu</p>
+                        <h1 class="display-4 fw-semibold text-primary-emphasis">Jalatsid, milles on hea liikuda.</h1>
+                        <p class="lead mt-4">Valime oma kollektsiooni jalanõud, mis ühendavad mugavuse, vastupidavuse ja ajatu stiili. Meie
+                            eesmärk on teha hea paari leidmine lihtsaks.</p>
+                        <p>Oleme Eesti väikeettevõte, kelle jaoks on oluline aus teenindus ja läbimõeldud valik. Iga toode jõuab meie
+                            valikusse põhjusega.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="img-fluid rounded-3" alt="Jalatsid poe valikus">
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-5">
+                        <h2 class="h3 mb-3">Meie põhimõtted</h2>
+                        <div class="list-group">
+                            <div class="list-group-item d-flex gap-3 align-items-start">
+                                <span class="bi bi-heart text-primary fs-4" aria-hidden="true"></span>
+                                <div><h3 class="h6 mb-1">Mugavus ennekõike</h3><p class="mb-0 text-body-secondary">Hea disain peab toetama
+                                        sinu päeva, mitte seda segama.</p></div>
+                            </div>
+                            <div class="list-group-item d-flex gap-3 align-items-start">
+                                <span class="bi bi-recycle text-primary fs-4" aria-hidden="true"></span>
+                                <div><h3 class="h6 mb-1">Teadlikum valik</h3><p class="mb-0 text-body-secondary">Eelistame kvaliteetseid
+                                        materjale ja kestvaid lahendusi.</p></div>
+                            </div>
+                            <div class="list-group-item d-flex gap-3 align-items-start">
+                                <span class="bi bi-people text-primary fs-4" aria-hidden="true"></span>
+                                <div><h3 class="h6 mb-1">Inimlik teenindus</h3><p class="mb-0 text-body-secondary">Oleme olemas enne ostu,
+                                        ostu ajal ja ka pärast seda.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="h3 mb-3">Meie teekond</h2>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover align-middle">
+                                <caption class="caption-top">Olulisemad hetked meie loos</caption>
+                                <thead class="table-dark">
+                                    <tr><th scope="col">Aasta</th><th scope="col">Sündmus</th><th scope="col">Mõju</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th scope="row">2019</th><td>Avastasime oma esimese veebipoe</td><td>Esimesed 100 klienti</td></tr>
+                                    <tr><th scope="row">2022</th><td>Laiendasime valikut</td><td>Uued Eesti koostööpartnerid</td></tr>
+                                    <tr><th scope="row">2026</th><td>Uus veebikogemus</td><td>Kiirem ja selgem ostuteekond</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Meie lehe alammenüü">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><span class="page-link">Eelmine</span></li>
+                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                        <li class="page-item"><a class="page-link" href="index.html">Tooted</a></li>
+                        <li class="page-item"><a class="page-link" href="ostukorv.html">Ostukorv</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+
+        <footer class="footer bg-dark text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="h4">Kontaktid</h2>
+                        <ul class="footer-links">
+                            <li><p>© 20.09.2026</p></li>
+                            <li><p>tel: +372 1234567</p></li>
+                            <li><p>@: info@bootstrap.ee</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <a class="btn btn-outline-light" href="index.html">Tagasi avalehele</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGKZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
