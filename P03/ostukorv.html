@@ -1,181 +1,201 @@
 <!doctype html>
 <html lang="et">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bootstrapi juhend">
-  <meta name="author" content="">
-  <title>Bootstrap 5 juhend</title>
-  <!--Bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!--Bootstrap ikoonid-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
-  <!--minu CSS-->
-  <link rel="stylesheet" href="custom.css">
-  
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrapi juhend">
+    <meta name="author" content>
+    <title>Bootstrap 5 juhend</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Bootstrap ikoonid-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!--minu CSS-->
+    <link rel="stylesheet" href="custom.css">
 
-<body>
-  <!-- Navigatsioon --->
-  <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand me-5" href="#">Bootstrap 5</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Naised</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Kingad</a></li>
-              <div class="dropdown-divider"></div>
-              <li><a class="dropdown-item" href="#">Saapad</a></li>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigatsioon -->
+      <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+
+          <!-- Hamburger menüü nupp -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand me-5" href="index.html">
+            <img src="img/adidas-logo.png" alt="Logo" width="50" height="50">Bootstrap 5</a>
+
+          <!-- Naised Mehed Meist - Collapsible -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <!-- Naised -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Naised</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Kingad</a></li>
+                  <li><div class="dropdown-divider"></div></li>
+                  <li><a class="dropdown-item" href="#">Saapad</a></li>
+                </ul>
+              </li>
+              <!-- Mehed -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Mehed</a>
+                <ul class="dropdown-menu" aria-labelledby="menDropdown">
+                  <li><a class="dropdown-item" href="#">Kingad</a></li>
+                  <li><div class="dropdown-divider"></div></li>
+                  <li><a class="dropdown-item" href="#">Saapad</a></li>
+                </ul>
+              </li>
+              <!-- Meist -->
+              <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
+
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Mehed</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Kingad</a></li>
-              <div class="dropdown-divider"></div>
-              <li><a class="dropdown-item" href="#">Saapad</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
-        </ul>
-        
-		<!--Otsi vorm -->
-        <form class="d-flex me-1">
-          <div class="input-group">
-            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
-            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+
+            <!-- Otsi vorm -->
+            <form class="d-flex me-1">
+              <div class="input-group">
+                <div class="input-group-text"><span class="bi bi-search mb-2" aria-hidden="true"></span></div>
+                <input class="form-control" type="search" placeholder="Otsi" aria-label="Otsi">
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <div class="float-end">
-       
-	   <!--Login ikoon-->
-        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
-       
-	   <!--Ostukorvi ikoon-->
-        <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
-      </div>
-    </div>
-  </nav>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex align-items-start flex-column">
-          <div class="mb-auto p-2">
-            <h4>Teie ostukorv</h4>
+
+          <!-- Logi sisse ja ostukorv -->
+          <div class="float-end">
+            <!-- Kasutaja -->
+            <button class="btn btn-link text-light me-2" type="button" aria-label="Logi sisse">
+              <span class="bi bi-person"></span>
+            </button>
+            <!-- Ostukorv -->
+            <a class="btn btn-primary me-2" href="ostukorv.html" aria-label="Ava ostukorv" aria-current="page"><span class="bi bi-cart3"></span></a>
           </div>
-          <div class="mb-auto p-2 row">
-            <div class="col-lg-6">
-              <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" width="100%">
-            </div>
-			<div class="col-lg-3">
-              <p>199 &#8364;</p>
-              <p>Ilusad saapad</p>
-              <select class="form-select">
-                <option>0</option>
-                <option selected="selected">1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-              <br />
-            </div>
-          </div>
-          <div class="p-2">
-            <p>Tarne: tasuta</span></p>
-            <p>Kokku: 199 &#8364;</span></p>
-          </div>
-          <!-- <div class="p-2 mx-auto">
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <!-- Vasakpoolne osa -->
+            <div class="col-lg-6 d-flex align-items-start flex-column">
+              <div class="mb-auto p-2">
+                <h4>Teie ostukorv</h4>
+              </div>
+              <div class="mb-auto p-2 row">
+                <div class="col-lg-6">
+                  <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="img-fluid rounded-3" alt="saapad">
+                </div>
+                <div class="col-lg-3">
+                  <p>199 &#8364;</p>
+                  <p>Ilusad saapad</p>
+                  <select class="form-select">
+                    <option>0</option>
+                    <option selected="selected">1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <!-- <br /> -->
+                </div>
+              </div>
+              <div class="p-2">
+                <p>Tarne: tasuta</p>
+                <p>Kokku: 199 &#8364;</p>
+              </div>
+              <!-- <div class="p-2 mx-auto">
             <a href="#" class="btn btn-primary btn-lg mb-3">Maksma</a>
           </div> -->
+            </div>
+            <!-- </div> -->
+            <div class="col-lg-6">
+              <!--Tee ise: korrasta (lisa) ostukorvi vormi nii, et sellel oleks väljad kasutaja andmete jaoks, makse ja tarneviisi valik ning ostukorv oleks kujundatud järgides kasutajaliidese disaini põhimõtteid.-->
+              <form>
+                <div class="my-5">
+                  <label for="nimi" class="form-label">Nimi</label>
+                  <input type="text" class="form-control" id="nimi" placeholder="Sisesta oma nimi">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" placeholder="Sisesta oma e-mail: placeholder@gmail.com">
+                </div>
+                <div class="mb-3">
+                  <label for="aadress" class="form-label">Aadress</label>
+                  <input type="text" class="form-control" id="aadress" placeholder="Sisesta oma aadress">
+                </div>
+                <div class="mb-3">
+                  <label for="makseviis" class="form-label">Makseviis</label>
+                  <select class="form-select" id="makseviis">
+                    <option selected>Vali makseviis</option>
+                    <option value="1">Krediitkaart</option>
+                    <option value="2">PayPal</option>
+                    <option value="3">Pangaülekanne</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="tarneviis" class="form-label">Tarneviis</label>
+                  <select class="form-select" id="tarneviis">
+                    <option selected>Vali tarneviis</option>
+                    <option value="1">Kullerteenus</option>
+                    <option value="2">Postkontorisse</option>
+                    <option value="3">Pakiautomaat</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="lisainfo" class="form-label">Lisainfo</label>
+                  <textarea class="form-control" id="lisainfo" rows="3"
+                    placeholder="Kirjuta siia lisainfo oma tellimuse kohta"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Esita tellimus</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6">
-          <!--Tee ise: korrasta (lisa) ostukorvi vormi nii, et sellel oleks väljad kasutaja andmete jaoks, makse ja tarneviisi valik ning ostukorv oleks kujundatud järgides kasutajaliidese disaini põhimõtteid.-->
-          <form>
-            <div class="my-4">
-              <label for="nimi" class="form-label">Nimi</label>
-              <input type="text" class="form-control" id="nimi" placeholder="Sisesta oma nimi">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email" placeholder="Sisesta oma e-mail: placeholder@gmail.com">
-            </div>
-            <div class="mb-3">
-              <label for="aadress" class="form-label">Aadress</label>
-              <input type="text" class="form-control" id="aadress" placeholder="Sisesta oma aadress">
-            </div>
-            <div class="mb-3">
-              <label for="makseviis" class="form-label">Makseviis</label>
-              <select class="form-select" id="makseviis">
-                <option selected>Vali makseviis</option>
-                <option value="1">Krediitkaart</option>
-                <option value="2">PayPal</option>
-                <option value="3">Pangaülekanne</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="tarneviis" class="form-label">Tarneviis</label>
-              <select class="form-select" id="tarneviis">
-                <option selected>Vali tarneviis</option>
-                <option value="1">Kullerteenus</option>
-                <option value="2">Postkontorisse</option>
-                <option value="3">Pakiautomaat</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="lisainfo" class="form-label">Lisainfo</label>
-              <textarea class="form-control" id="lisainfo" rows="3" placeholder="Kirjuta siia lisainfo oma tellimuse kohta"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Esita tellimus</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </main>
 
-  
-  <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
-  <footer class="footer bg-dark text-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Kontaktid:</h1>
-          <ul class="footer-links">
-            <li><p>© 20.09.2026</p></li>
-            <li><p>tel: +372 1234567</p></li>
-            <li><p>@: info@bootstrap.ee</p></li>
-          </ul>
-        </div>
-        <div class="col-md-6 text-end">
-          <div class="footer-sm">
-            <a class="d-inline-block opacity-50 opacity-100-hover transition my-2 me-1" href="https://www.twitter.com" aria-label="Go to Our Twitter Page">
-              <img src="img/twitter-logo.png" alt="twitter" class="img-fluid"/></a>
-            <a class="d-inline-block opacity-75 opacity-100-hover transition my-2 me-2" href="https://www.facebook.com" aria-label="Go to Our Facebook Page">
-              <img src="img/facebook-logo.png" alt="facebook" class="img-fluid"/></a>
+    <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
+    <footer class="footer bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Kontaktid:</h1>
+            <ul class="footer-links">
+              <li><p>© 20.09.2026</p></li>
+              <li><p>tel: +372 1234567</p></li>
+              <li><p>@: info@bootstrap.ee</p></li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-end">
+            <div class="footer-sm">
+              <a class="d-inline-block opacity-50 opacity-100-hover transition my-2 me-1" href="https://www.twitter.com"
+                aria-label="Go to Our Twitter Page">
+                <img src="img/twitter-logo.png" alt="twitter" class="img-fluid"></a>
+              <a class="d-inline-block opacity-75 opacity-100-hover transition my-2 me-2" href="https://www.facebook.com"
+                aria-label="Go to Our Facebook Page">
+                <img src="img/facebook-logo.png" alt="facebook" class="img-fluid"></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  
-  <!--Popper.js-->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-	
-  <!--Bootstrap.js-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-</body>
+    </footer>
+
+    <!--Popper.js-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+    <!--Bootstrap.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+  </body>
 
 </html>

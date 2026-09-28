@@ -18,8 +18,9 @@
   </head>
 
   <body>
-    <!-- Navigatsioon --->
-    <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
+    <header>
+    <!-- Navigatsioon -->
+    <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
 
         <!-- Hamburger menüü nupp -->
@@ -33,20 +34,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown" href="#" id="womenDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Naised</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="womenDropdown">
                 <li><a class="dropdown-item" href="#">Kingad</a></li>
-                <div class="dropdown-divider"></div>
+                <li><div class="dropdown-divider"></div></li>
                 <li><a class="dropdown-item" href="#">Saapad</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown" href="#" id="menDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Mehed</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="menDropdown">
                 <li><a class="dropdown-item" href="#">Kingad</a></li>
-                <div class="dropdown-divider"></div>
+                <li><div class="dropdown-divider"></div></li>
                 <li><a class="dropdown-item" href="#">Saapad</a></li>
               </ul>
             </li>
@@ -63,22 +64,26 @@
         </div>
         <div class="float-end">
 
-          <!--Login ikoon-->
-          <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
-
-          <!--Ostukorvi ikoon-->
-          <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+         <!-- Kasutaja -->
+            <button class="btn btn-link text-light me-2" type="button" aria-label="Logi sisse">
+              <span class="bi bi-person"></span>
+            </button>
+            <!-- Ostukorv -->
+            <a class="btn btn-primary me-2" href="ostukorv.html" aria-label="Ava ostukorv" aria-current="page"><span class="bi bi-cart3"></span></a>
       </div>
     </div>
   </nav>
+  </header>
+  <main>
   <section>
     <div class="container">
       <div class="row mt-5">
+        <h2 class="display-5 fw-semibold text-primary-emphasis">Toode</h2>
         <div class="col-lg-6">
-          <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="img-fluid rounded-3" alt="saapad" />
+          <img src="img/stephan-seeber-NzAfGi8XuA4-unsplash.jpg" class="img-fluid rounded-3" alt="saapad">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-semibold text-primary-emphasis">Saapad 1</h1>
+          <h3 class="display-5 fw-semibold text-primary-emphasis">Saapad 1</h3>
           <h4 class="mt-5 text">Hind 199.99 &#8364;</h4>
           <h4 class="mt-5">Kirjeldus</h4>
           <p class="my-2 fs-5 fw-light">Lorem ipsum dolor sit amet</p>
@@ -145,6 +150,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
   <footer class="footer bg-dark text-light">
@@ -161,9 +167,9 @@
         <div class="col-md-6 text-end">
           <div class="footer-sm">
             <a class="d-inline-block opacity-50 opacity-100-hover transition my-2 me-1" href="https://www.twitter.com" aria-label="Go to Our Twitter Page">
-              <img src="img/twitter-logo.png" alt="twitter" class="img-fluid"/></a>
+              <img src="img/twitter-logo.png" alt="twitter" class="img-fluid"></a>
             <a class="d-inline-block opacity-75 opacity-100-hover transition my-2 me-2" href="https://www.facebook.com" aria-label="Go to Our Facebook Page">
-              <img src="img/facebook-logo.png" alt="facebook" class="img-fluid"/></a>
+              <img src="img/facebook-logo.png" alt="facebook" class="img-fluid"></a>
           </div>
         </div>
       </div>
