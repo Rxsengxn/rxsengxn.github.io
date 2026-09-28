@@ -75,7 +75,8 @@
               <span class="bi bi-person"></span>
             </button>
             <!-- Ostukorv -->
-            <a class="btn btn-primary me-2" href="ostukorv.html" aria-label="Ava ostukorv" aria-current="page"><span class="bi bi-cart3"></span></a>
+            <a class="btn btn-primary me-2" href="ostukorv.html" aria-label="Ava ostukorv" aria-current="page"><span
+                class="bi bi-cart3"></span></a>
           </div>
         </div>
       </nav>
@@ -117,32 +118,32 @@
             <!-- </div> -->
             <div class="col-lg-6">
               <!--Tee ise: korrasta (lisa) ostukorvi vormi nii, et sellel oleks väljad kasutaja andmete jaoks, makse ja tarneviisi valik ning ostukorv oleks kujundatud järgides kasutajaliidese disaini põhimõtteid.-->
-              <form>
-                <div class="my-5">
-                  <label for="nimi" class="form-label">Nimi</label>
-                  <input type="text" class="form-control" id="nimi" placeholder="Sisesta oma nimi">
+              <form class="col-lg-12 mt-5">
+                <div class="mt-5 mb-3">
+                  <label for="nimi" class="form-label">Nimi *</label>
+                  <input type="text" class="form-control" id="nimi" placeholder="Sisesta oma nimi" required>
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">E-mail</label>
-                  <input type="email" class="form-control" id="email" placeholder="Sisesta oma e-mail: placeholder@gmail.com">
+                  <label for="email" class="form-label">E-mail *</label>
+                  <input type="email" class="form-control" id="email" placeholder="Sisesta oma e-mail: placeholder@gmail.com" required>
                 </div>
                 <div class="mb-3">
-                  <label for="aadress" class="form-label">Aadress</label>
-                  <input type="text" class="form-control" id="aadress" placeholder="Sisesta oma aadress">
+                  <label for="aadress" class="form-label">Aadress *</label>
+                  <input type="text" class="form-control" id="aadress" placeholder="Sisesta oma aadress" required>
                 </div>
                 <div class="mb-3">
-                  <label for="makseviis" class="form-label">Makseviis</label>
-                  <select class="form-select" id="makseviis">
-                    <option selected>Vali makseviis</option>
+                  <label for="makseviis" class="form-label">Makseviis *</label>
+                  <select class="form-select" id="makseviis" required>
+                    <option selected disabled value="">Vali makseviis</option>
                     <option value="1">Krediitkaart</option>
                     <option value="2">PayPal</option>
                     <option value="3">Pangaülekanne</option>
                   </select>
                 </div>
                 <div class="mb-3">
-                  <label for="tarneviis" class="form-label">Tarneviis</label>
-                  <select class="form-select" id="tarneviis">
-                    <option selected>Vali tarneviis</option>
+                  <label for="tarneviis" class="form-label">Tarneviis *</label>
+                  <select class="form-select" id="tarneviis" required>
+                    <option selected disabled value="">Vali tarneviis</option>
                     <option value="1">Kullerteenus</option>
                     <option value="2">Postkontorisse</option>
                     <option value="3">Pakiautomaat</option>
@@ -153,7 +154,15 @@
                   <textarea class="form-control" id="lisainfo" rows="3"
                     placeholder="Kirjuta siia lisainfo oma tellimuse kohta"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Esita tellimus</button>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="tingimused" required>
+                  <label class="form-check-label" for="tingimused">
+                    Olen lugenud ja nõustun <a href="#">tingimustega</a>. *
+                  </label>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Esita tellimus</button>
+                </div>
               </form>
             </div>
           </div>
