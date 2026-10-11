@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin: 1rem 0;
+    color: rgb(23, 24, 24);
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.container {
+    margin: 1rem;
+}
+
+.section {
+    margin-top: 3rem;
+}
+
+.toode {
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+/* kuvab hinna järel € märgi*/
+.toode_hind:after {
+    content: ' €';
+}
+
+
+button {
+    background-color: #4dc7ff;
+    color: rgb(60, 60, 60);
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    margin: 0.3rem;
+    transition: 0.1s ease-in-out;
+    font-weight: 600;
+    font-size: 0.95rem;
+
+}
+
+.btn-small {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+
+:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+
+.btn-small:hover {
+    background-color: #b7daee;
+    transform: translateY(2px);
+}
+
+button:hover {
+    background-color: #24a5fb;
+    transform: translateY(2px);
+}
+
+
+
+.korv {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.korv-artiklid {
+    margin: 1rem 0;
+}
+
+.korv_artikkel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid rgb(203, 203, 203);
+    padding: 0rem 1.5rem;
+    margin: 0.5rem 0;
+}
+
+/* kuvab hinna järel € märgi*/
+.korv_artikkel_hind:after, .korv_artikkel_summa:after {
+    content: ' €';
+}
+
+.korv_artikkel_summa:before {
+    content: 'Kokku: ';
+}
+
+
+.korv_artikkel_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.korv-jalus {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    width: 50%;
+}
+
+
+
+/* vormid */
+form {
+    padding: 1rem;
+
+}
+
+form input {
+    margin: 18px auto;
+    padding: 0.5rem;
+    border: 1px solid #4090db;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .toode {
+        width: 100%;
+
+    }
+
+    .korv {
+        width: 100%;
+
+    }
+
+    .korv-jalus {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .toode {
+        width: 100%;
+        padding: 0.25rem;
+    }
+
+    .korv {
+        padding: 1rem;
+        width: 100%;
+
+    }
+
+    .korv_artikkel {
+        padding: 1rem;
+        width: 100%;
+
+    }
+
+    .korv-jalus {
+        padding: 1rem;
+        width: 100%;
+    }
+
+
+
+}

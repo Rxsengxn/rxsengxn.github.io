@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Javascript interaktiivne veebileht">
+    <meta name="author" content="">
+    <title>JavaScript 2 - interaktiivne veebileht</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <!----------------Ostukorv--------------------->
+        <section class="section">
+            <h2 class="text-center">Tooted</h2>
+            <div class="tooted">
+                <div class="toode">
+                    <h2 class="toode_nimi">Kingad</h2>
+                    <h3 class="toode_hind">79</h3>
+                    <button class="btn" data-action="lisa_korvi">Lisa ostukorvi</button>
+                </div>
+                <div class="toode">
+                    <h2 class="toode_nimi">Saapad</h2>
+                    <h3 class="toode_hind">109</h3>
+                    <button class="btn" data-action="lisa_korvi">Lisa ostukorvi</button>
+                </div>
+                <div class="toode">
+                    <h2 class="toode_nimi">Kummikud</h2>
+                    <h3 class="toode_hind">29</h3>
+                    <button class="btn" data-action="lisa_korvi">Lisa ostukorvi</button>
+                </div>
+            </div>
+
+
+            <h2 class="ostukorv">Ostukorv</h2>
+            <div class="korv"></div>
+        </section>
+
+        <!----------------Taimer--------------------->
+        <section class="section">
+            <h2>Ostu sooritamiseks <span id="time"></span> </h2>
+
+        </section>
+
+        <!----------------Tarne vorm--------------------->
+        <section class="section">
+            <h2>Tarne</h2>
+            <form action="" method="GET" id="form">
+                <div class="form-control">
+                    <label for="eesnimi">Eesnimi:
+                        <input type="text" id="eesnimi" required>
+                    </label>
+                    <br>
+                    <label for="perenimi">Perenimi:
+                        <input type="text" id="perenimi" required>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label for="epost">E-post:
+                        <input type="email" id="epost" required>
+                    </label>
+                </div>
+
+                <div class="form-control">
+                    <label for="telefon">Telefon:
+                        <input type="text" id="telefon" required>
+                    </label>
+                </div>
+
+                <!-- minu kood -->
+                <div class="form-control">
+                    <label for="postiindeks">Postiindeks:
+                        <input type="text" id="postiindeks">
+                    </label>
+                </div>
+                <!-- minu kood -->
+
+                <br>
+                <div class="form-control">
+                    <label for="kinnitus">Nõustun tingimustega
+                        <input type="checkbox" id="kinnitus" name="kinnitus"></label>
+                </div>
+
+                <div class="form-control">
+                    <h4> Tarneviisid</h4>
+                    <label for="tarne1">Pakiautomaati<input type="radio" name="tarne" id="tarne1" onMouseDown="this.__chk = this.checked" onClick="if (this.__chk) this.checked = false"></label>
+                    <br>
+                    <label for="tarne2">Tulen ise järgi<input type="radio" name="tarne" id="tarne2" onMouseDown="this.__chk = this.checked" onClick="if (this.__chk) this.checked = false"></label>
+                </div>
+
+                <div id="tehing"> <button id="btnsubmit">Kinnita ost</button>
+
+                </div>
+                <div id="errorMessage">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="skript.js"></script>
+</body>
+
+</html>
