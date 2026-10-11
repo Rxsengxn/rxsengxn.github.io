@@ -119,12 +119,19 @@ function tuhjendaKorv() {
         korvArtikkelD.remove();
     });
 
-    document.querySelector('.korv-jalus').remove();
+    // Tyhjenda korv, muidu teised elemendid arvestavad, et seal on sees veel asju
+    korv = [];
+
+    const korviJalus = document.querySelector('.korv-jalus');
+    if (korviJalus) {
+        korviJalus.remove();
+    }
 
     lisaKorviNupud.forEach(lisaOstukorviNupp => {
-        lisaKorviNupp.innerText = 'Lisa ostukorvi';
-        lisaKorviNupp.disabled = false;
+        lisaOstukorviNupp.innerText = 'Lisa ostukorvi';
+        lisaOstukorviNupp.disabled = false;
     });
+    uuendaSumma();
 }
 
 
